@@ -1,0 +1,15 @@
+.complete{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+button{
+    margin-left: 10px;
+    
+}

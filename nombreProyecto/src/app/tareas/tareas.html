@@ -1,0 +1,12 @@
+<h2>{{tasks}}</h2>
+<div *ngFor="let task of tasks" [class.complete]="task.iscompleted">
+    {{task.name}}
+</div>
+
+<div *ngFor="let task of tasks" class="task-item">
+    <span [class.complete]="task.iscompleted">{{task.name}}</span>
+    <button (click)="toggleCompletion(task)" class="btn btn-dark">
+        {{ task.iscompleted ? 'Deshacer' : 'Completar' }}
+    </button>
+
+</div>

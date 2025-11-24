@@ -1,0 +1,29 @@
+<div class="div">
+    <div class="row">
+        <div class="col">
+            <label for="">Mensaje</label>
+            <input #mensajeUsuario type="text">    
+        </div>
+        <div class="col">
+            <label for="">Nombre</label>
+            <input #nombreUsuario type="text">
+        </div>
+        <div class="col">
+            <label for="">Edad</label>
+            <input #edad type="text">
+        </div>
+        <div class="col">
+            <label for="">Telefono</label>
+            <input #telefono type="text">
+        </div>
+    </div>
+</div>
+<div class="row-mt-3">
+    <button class="btn btn-primary" (click)="guardarV(mensajeUsuario.value, nombreUsuario.value, edad.value, telefono.value)">guardar</button>
+    <p>{{mensaje}}</p>
+</div>
+
+
+<input #inputText type="text">
+<button (click)="mostrarTexto(inputText.value)">Enviar</button>
+

@@ -1,0 +1,22 @@
+<h2>🧠 Juego de Memoria</h2>
+
+<p class="contador">Intentos: {{ intentos }}</p>
+
+<div class="tablero">
+  <div
+    *ngFor="let carta of cartas; let i = index"
+    class="carta"
+    (click)="voltearCarta(i)"
+  >
+    <span *ngIf="estaVolteada(i)">{{carta}}</span>
+    <span *ngIf="!estaVolteada(i)">❓</span>
+  </div>
+</div>
+
+<button (click)="iniciarJuego()" class="boton-reiniciar">
+  🔄 Reiniciar
+</button>
+
+<p *ngIf="mensajeGanaste" class="mensaje-ganaste">
+  {{ mensajeGanaste }}
+</p>
