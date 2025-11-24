@@ -11,6 +11,7 @@ import { JuegoDeCartas } from './juego-de-cartas/juego-de-cartas';
 import { Input } from './input/input';
 import { Child } from './child/child';
 import { Semaforo } from './semaforo/semaforo';
+import { Prueba } from './prueba/prueba';
  
 
 @NgModule({
@@ -22,6 +23,7 @@ import { Semaforo } from './semaforo/semaforo';
     Input,
     Child,
     Semaforo,
+    Prueba,
   ],
   imports: [
     BrowserModule,
